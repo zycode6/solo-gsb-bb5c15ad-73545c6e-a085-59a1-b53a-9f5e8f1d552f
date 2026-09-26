@@ -1219,3 +1219,102 @@ input.invalid {
   background: rgba(47, 191, 113, 0.18);
   color: var(--ok);
 }
+
+/* ---- 重定向链预演 ---- */
+
+.chain-form {
+  margin-top: 10px;
+}
+
+.chain-report {
+  margin-top: 12px;
+}
+
+.chain-hop {
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.chain-terminal {
+  border-left: 3px solid var(--ok);
+}
+
+.chain-terminal-error {
+  border-left-color: var(--error);
+}
+
+.chain-hop-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 8px 12px;
+}
+
+.chain-hop-head:hover:not(:disabled) {
+  border-color: transparent;
+  background: rgba(91, 157, 255, 0.07);
+}
+
+.chain-hop-n {
+  color: var(--muted);
+  font-size: 12px;
+  flex: none;
+  white-space: nowrap;
+}
+
+.chain-hop-url {
+  flex: 1;
+  min-width: 0;
+  font-size: 12px;
+  word-break: break-all;
+}
+
+.chain-hop-loc {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 0 12px 8px 34px;
+  font-size: 12.5px;
+  color: var(--muted);
+  word-break: break-all;
+}
+
+.chain-loc-label {
+  flex: none;
+}
+
+.chain-hop-trace {
+  border-top: 1px dashed var(--border);
+  padding: 10px 12px;
+}
+
+.chain-trace-caption {
+  margin: 0 0 8px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.tag.tag-method-change {
+  background: rgba(224, 169, 62, 0.18);
+  color: var(--warn);
+  font-family: var(--mono);
+}
+
+.tag.chain-tag-final {
+  background: rgba(47, 191, 113, 0.18);
+  color: var(--ok);
+}
+
+.tag.chain-tag-error {
+  background: rgba(229, 83, 75, 0.18);
+  color: var(--error);
+}

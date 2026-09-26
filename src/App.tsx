@@ -8,6 +8,7 @@ import { RulesPanel } from './components/RulesPanel';
 import { Simulator } from './components/Simulator';
 import { TraceView } from './components/TraceView';
 import DebugPanel from './components/DebugPanel';
+import { RedirectChainPanel } from './components/RedirectChainPanel';
 import { RegressionPanel } from './components/RegressionPanel';
 import { CoveragePanel } from './components/CoveragePanel';
 import { ShareCreateDialog } from './components/ShareCreateDialog';
@@ -239,6 +240,7 @@ export default function App() {
           ) : (
             sim && <TraceView sim={sim} />
           )}
+          <RedirectChainPanel rules={rules} />
         </div>
       </main>
       <RegressionPanel rules={rules} />
