@@ -1219,3 +1219,82 @@ input.invalid {
   background: rgba(47, 191, 113, 0.18);
   color: var(--ok);
 }
+
+/* ---- 重定向链预演 ---- */
+
+.chain-panel {
+  margin-top: 20px;
+}
+
+.chain-results {
+  margin-top: 12px;
+}
+
+.hop {
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.hop-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 8px 12px;
+}
+
+.hop-head:hover:not(:disabled) {
+  border-color: transparent;
+  background: rgba(91, 157, 255, 0.07);
+}
+
+.hop-n {
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 12px;
+  flex: none;
+  white-space: nowrap;
+}
+
+.hop-url {
+  flex: 1;
+  min-width: 0;
+  word-break: break-all;
+  font-size: 12px;
+}
+
+.hop-steps-count {
+  color: var(--muted);
+  font-size: 12px;
+  flex: none;
+  white-space: nowrap;
+}
+
+.tag.hop-status {
+  background: rgba(47, 191, 113, 0.18);
+  color: var(--ok);
+  font-family: var(--mono);
+}
+
+.hop-location {
+  padding: 0 12px 8px 34px;
+  font-size: 12.5px;
+  color: var(--muted);
+  word-break: break-all;
+}
+
+.hop-method-note {
+  color: var(--warn);
+}
+
+.hop-trace {
+  border-top: 1px dashed var(--border);
+  padding: 10px 12px;
+}
